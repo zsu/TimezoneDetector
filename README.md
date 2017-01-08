@@ -32,4 +32,5 @@ WebForms:
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js"></script>
 ```
-
+#License
+All source code is licensed under MIT license - http://www.opensource.org/licenses/mit-license.php
