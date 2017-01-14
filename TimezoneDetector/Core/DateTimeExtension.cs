@@ -22,8 +22,8 @@ namespace TimezoneDetector
 			string timezoneId = null;
 			try
 			{
-				if (HttpContext.Current != null && HttpContext.Current.Request != null && HttpContext.Current.Request.Cookies != null && HttpContext.Current.Request.Cookies.AllKeys.Contains(TimezoneDetector.COOKIE_KEY_TIME_ZONE_ID))
-					timezoneId = HttpContext.Current.Server.UrlDecode(HttpContext.Current.Request.Cookies[TimezoneDetector.COOKIE_KEY_TIME_ZONE_ID].Value);
+				if (HttpContext.Current != null && HttpContext.Current.Request != null && HttpContext.Current.Request.Cookies != null && HttpContext.Current.Request.Cookies.AllKeys.Contains(TimezoneDetector.CookieKeyTimezoneId))
+					timezoneId = HttpContext.Current.Server.UrlDecode(HttpContext.Current.Request.Cookies[TimezoneDetector.CookieKeyTimezoneId].Value);
 				string windowsTimezone = TimezoneDetector.GetClientTimeZone();
 				if (!string.IsNullOrEmpty(windowsTimezone))
 				{

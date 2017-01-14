@@ -9,14 +9,14 @@ namespace TimezoneDetector
 {
 	public class TimezoneDetector
 	{
-		public const string COOKIE_KEY_TIME_ZONE_ID = "timezoneid";
+		public const string CookieKeyTimezoneId = "timezoneid";
 		public static string GetClientTimeZone()
 		{
 			string timezoneId = null;
 			try
 			{
-				if (HttpContext.Current != null && HttpContext.Current.Request != null && HttpContext.Current.Request.Cookies != null && HttpContext.Current.Request.Cookies.AllKeys.Contains(COOKIE_KEY_TIME_ZONE_ID))
-					timezoneId = HttpContext.Current.Server.UrlDecode(HttpContext.Current.Request.Cookies[COOKIE_KEY_TIME_ZONE_ID].Value);
+				if (HttpContext.Current != null && HttpContext.Current.Request != null && HttpContext.Current.Request.Cookies != null && HttpContext.Current.Request.Cookies.AllKeys.Contains(CookieKeyTimezoneId))
+					timezoneId = HttpContext.Current.Server.UrlDecode(HttpContext.Current.Request.Cookies[CookieKeyTimezoneId].Value);
 				var windowsTimeZone = IanaToWindows(timezoneId);
 				if (!string.IsNullOrEmpty(windowsTimeZone))
 				{
