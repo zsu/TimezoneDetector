@@ -7,7 +7,7 @@ using System.Web;
 
 namespace TimezoneDetector
 {
-	public class TimezoneDetector
+	public class TimezoneDetectorUtil
 	{
 		public const string CookieKeyTimezoneId = "timezoneid";
 		public static string GetClientTimeZone()

@@ -5,8 +5,12 @@ TimezoneDetector is a asp.net MVC/Web Form library for browser timezone detectio
 #Demo
   * Demo can be found at: http://devs.azurewebsites.net/TimezoneDetector
 
-#Getting started with TimezoneDetector
+#Nuget
+~~~xml
+  Install-Package TimezoneDetector
+~~~
 
+#Getting started with TimezoneDetector
   * Reference TimezoneDetector.dll
   * Call DateTime.UtcNow.ToClientTime() when you want to display message;
   * Use it on your page;

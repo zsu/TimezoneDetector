@@ -22,9 +22,9 @@ namespace TimezoneDetector
 			string timezoneId = null;
 			try
 			{
-				if (HttpContext.Current != null && HttpContext.Current.Request != null && HttpContext.Current.Request.Cookies != null && HttpContext.Current.Request.Cookies.AllKeys.Contains(TimezoneDetector.CookieKeyTimezoneId))
-					timezoneId = HttpContext.Current.Server.UrlDecode(HttpContext.Current.Request.Cookies[TimezoneDetector.CookieKeyTimezoneId].Value);
-				string windowsTimezone = TimezoneDetector.GetClientTimeZone();
+				if (HttpContext.Current != null && HttpContext.Current.Request != null && HttpContext.Current.Request.Cookies != null && HttpContext.Current.Request.Cookies.AllKeys.Contains(TimezoneDetectorUtil.CookieKeyTimezoneId))
+					timezoneId = HttpContext.Current.Server.UrlDecode(HttpContext.Current.Request.Cookies[TimezoneDetectorUtil.CookieKeyTimezoneId].Value);
+				string windowsTimezone = TimezoneDetectorUtil.GetClientTimeZone();
 				if (!string.IsNullOrEmpty(windowsTimezone))
 				{
 					var localTime = TimeZoneInfo.ConvertTimeFromUtc(dt, TimeZoneInfo.FindSystemTimeZoneById(windowsTimezone));
