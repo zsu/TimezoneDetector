@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>TimezoneDetector</id>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
     <title>TimezoneDetector</title>
     <authors>Zhicheng Su</authors>
     <owners>Zhicheng Su</owners>
@@ -19,6 +19,7 @@
     </dependencies>
   </metadata>
   	<files>
-	    <file src="Scripts\jstz.min.js" target="Scripts" />
+	    <file src="Scripts\jstz.min.js" target="Content\Scripts" />
+		<file src="..\TimezoneDetector\bin\Release\TimezoneDetector.dll" target="lib\net45\TimezoneDetector.dll" />
 	</files>
 </package>
