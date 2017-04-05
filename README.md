@@ -1,16 +1,16 @@
-#What is TimezoneDetector
+# What is TimezoneDetector
 
 TimezoneDetector is a asp.net MVC/Web Form library for browser timezone detection. jQuery,JQuery-cookie and jsTimezoneDetect are required. The goal is to provide simple way to auto detect browser timezone and display browser time.
 
-#Demo
+# Demo
   * Demo can be found at: http://devs.azurewebsites.net/TimezoneDetector
 
-#Nuget
+# Nuget
 ~~~xml
   Install-Package TimezoneDetector
 ~~~
 
-#Getting started with TimezoneDetector
+# Getting started with TimezoneDetector
   * Reference TimezoneDetector.dll
   * Call DateTime.UtcNow.ToClientTime() when you want to display message;
   * Use it on your page;
@@ -36,5 +36,5 @@ WebForms:
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.6/jstz.min.js"></script>
 ```
-#License
+# License
 All source code is licensed under MIT license - http://www.opensource.org/licenses/mit-license.php
