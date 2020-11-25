@@ -1,3 +1,6 @@
+[![NuGet](https://img.shields.io/nuget/v/TimezoneDetector.svg)](https://www.nuget.org/packages/TimezoneDetector)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 # What is TimezoneDetector
 
 TimezoneDetector is an asp.net MVC/Web Form library for browser timezone detection. It provides simple way to detect browser timezone and display browser time.
